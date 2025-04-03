@@ -3,13 +3,12 @@
         text-align: center;
         border: dashed black 2px;
         border-radius: 40px;
-        padding: 10px;
         color: yellow;
         font-size: 0.3em;
         transition: 0.7s;
         font-family: Alkalami;
 
-        font-size: 5rem;
+        font-size: 1rem;
         color: white;
         text-align: center;
         padding: 20px;
@@ -94,4 +93,24 @@ body {
 #mentions{
     text-align: center;
     margin-top: 50px;
+}
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
 }
