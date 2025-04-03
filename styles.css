@@ -16,6 +16,10 @@
         box-shadow: 0 0 10px #0ff; /* Initial glow */
         background-color: black; /* Dark background for better effect */
     }
+    h2{
+        font-size: 2em;
+        color: ;
+    }
 body{
     background: #cccccccc;
 }
@@ -24,8 +28,24 @@ body {
     justify-content: center;  /* محاذاة أفقية */
     align-items: center;    
 }
+#top-container{
+    display: block;
+    margin-top: 20px;
+    
+}
+.ment{
+    margin: 10px;
+    text-align: center;
 
-#countlabel{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid #0ff; /* Cyan border */
+    box-shadow: 0 0 10px #0ff; /* Initial glow */
+    background-color: black; /* Dark background for better effect */
+}
+.countlabel{
     display: block;
     text-align: center;
     font-size: 10em;
@@ -38,61 +58,21 @@ body {
     box-shadow: 0 0 10px #0ff; /* Initial glow */
     background-color: black; /* Dark background for better effect */
 }
-#btncontainer{
-    text-align: center;
-}
-.btns{
-    padding: 10px 20px;
-    font-size: 1.3em;
-    border-radius: 20px;
-    color: #009900;
-    background: hsl(214, 100%, 74%);
-    cursor: pointer;
-    margin: 0.2em;
-    font-family: Tektur;
-    transition: background-color 0.25s;
-}
-.btns-main{
-    padding: 20px 40px;
-    font-size: 4em;
-    border-radius: 20px;
-    color: #009900;
-    background: hsl(214, 100%, 74%);
-    cursor: pointer;
-    margin: 0.2em;
-    font-family: Tektur;
-    transition: background-color 0.25s;
-}
-.btns:hover{
-    background: #0229d8;
-}
-#increasebtn{
-    background-color: greenyellow;
-    height: 100px;
+button{
     width: 100px;
-    
-}
-#increasebtn:hover{
-    background-color: green;
-}
-#decreasebtn{
-    background-color: #f74343;
-    transition: 0.3s;
     height: 100px;
-    width: 100px;
-    font-size: 5em;
+    background-color: rgb(0, 255, 0);
+    border-radius:20px;
+    transition: 0.7s;
 }
-#decreasebtn:hover{
-    background-color: #ff0000;
+button:hover{
+    background: green;
 }
-#resetbtn{
-    height: 100px;
-    width: 100px;
+.decrease{
+    background-color: red;
 }
-/* mentions*/
-#mentions{
-    text-align: center;
-    margin-top: 50px;
+.decrease:hover{
+    background: rgb(146, 0, 0);
 }
 @media (max-width:641px){
     body{
