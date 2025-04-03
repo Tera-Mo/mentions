@@ -1,0 +1,87 @@
+    h1{
+        margin: 0;
+        text-align: center;
+        border: dashed black 2px;
+        border-radius: 40px;
+        padding: 10px;
+        color: yellow;
+        font-size: 0.3em;
+        transition: 0.7s;
+        font-family: Alkalami;
+
+        font-size: 5rem;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        border: 3px solid #0ff; /* Cyan border */
+        box-shadow: 0 0 10px #0ff; /* Initial glow */
+        background-color: black; /* Dark background for better effect */
+    }
+body{
+    background: #cccccccc;
+}
+body {
+    
+    justify-content: center;  /* محاذاة أفقية */
+    align-items: center;    
+}
+
+#countlabel{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Tektur;
+    border-radius: 40px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid #0ff; /* Cyan border */
+    box-shadow: 0 0 10px #0ff; /* Initial glow */
+    background-color: black; /* Dark background for better effect */
+}
+#btncontainer{
+    text-align: center;
+}
+.btns{
+    padding: 10px 20px;
+    font-size: 1.3em;
+    border-radius: 20px;
+    color: #009900;
+    background: hsl(214, 100%, 74%);
+    cursor: pointer;
+    margin: 0.2em;
+    font-family: Tektur;
+    transition: background-color 0.25s;
+}
+.btns-main{
+    padding: 20px 40px;
+    font-size: 4em;
+    border-radius: 20px;
+    color: #009900;
+    background: hsl(214, 100%, 74%);
+    cursor: pointer;
+    margin: 0.2em;
+    font-family: Tektur;
+    transition: background-color 0.25s;
+}
+.btns:hover{
+    background: #0229d8;
+}
+#increasebtn{
+    background-color: greenyellow;
+}
+#increasebtn:hover{
+    background-color: green;
+}
+#decreasebtn{
+    background-color: #f74343;
+    transition: 0.3s;
+}
+#decreasebtn:hover{
+    background-color: #ff0000;
+}
+/* mentions*/
+#mentions{
+    text-align: center;
+    margin-top: 50px;
+}
