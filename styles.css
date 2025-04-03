@@ -69,6 +69,9 @@ body {
 }
 #increasebtn{
     background-color: greenyellow;
+    height: 100px;
+    width: 100px;
+    
 }
 #increasebtn:hover{
     background-color: green;
@@ -76,9 +79,16 @@ body {
 #decreasebtn{
     background-color: #f74343;
     transition: 0.3s;
+    height: 100px;
+    width: 100px;
+    font-size: 5em;
 }
 #decreasebtn:hover{
     background-color: #ff0000;
+}
+#resetbtn{
+    height: 100px;
+    width: 100px;
 }
 /* mentions*/
 #mentions{
