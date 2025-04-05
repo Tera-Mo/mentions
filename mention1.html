@@ -9,15 +9,15 @@
 <body>
     <a href="index.html">عوده</a>
     <div id="ment1" class="ment">
-        <h2>اللهم صل و سلم على سيدنا محمد</h2>
-        <label id="mention-1" class="countlabel">0</label> <br>
-        <button id="btn1"></button>
+        <h2>اللهم صل على محمد</h2>
+   
         <button id="zero1" class="zero"></button>
         <button id="btn11" class="decrease"></button>
+        <label id="mention-1" class="countlabel">0</label> <br>
     </div>
 
 
-    <script src="index.js">
+    <script>
 const btn1 = document.getElementById("btn1");
 const btn2 = document.getElementById("btn2");
 const btn3 = document.getElementById("btn3");
@@ -30,7 +30,7 @@ let count4 = 0;
 let count5 = 0;
 
 
-        document.getElementById("btn1").onclick = function(){
+        document.getElementById("mention-1").onclick = function(){
     count1++;
     document.getElementById("mention-1").textContent = count1;
 }

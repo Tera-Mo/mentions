@@ -73,10 +73,10 @@ button:hover{
     background: green;
 }
 .decrease{
-    background-color: red;
+    background-color: green;
 }
 .decrease:hover{
-    background: rgb(146, 0, 0);
+    background: rgb(7, 231, 7);
 }
 
 .zero{
