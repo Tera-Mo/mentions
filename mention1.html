@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>اللهم صل و سلم على سيدنا محمد</title>
+</head>
+<body>
+    <a href="index.html">عوده</a>
+    <div id="ment1" class="ment">
+        <h2>اللهم صل و سلم على سيدنا محمد</h2>
+        <label id="mention-1" class="countlabel">0</label> <br>
+        <button id="btn1"></button>
+        <button id="zero1" class="zero"></button>
+        <button id="btn11" class="decrease"></button>
+    </div>
+
+
+    <script src="index.js">
+const btn1 = document.getElementById("btn1");
+const btn2 = document.getElementById("btn2");
+const btn3 = document.getElementById("btn3");
+const btn4 = document.getElementById("btn4");
+const btn5 = document.getElementById("btn5");
+let count1 = 0;
+let count2 = 0;
+let count3 = 0;
+let count4 = 0;
+let count5 = 0;
+
+
+        document.getElementById("btn1").onclick = function(){
+    count1++;
+    document.getElementById("mention-1").textContent = count1;
+}
+
+document.getElementById("btn11").onclick = function(){
+    count1--;
+    document.getElementById("mention-1").textContent = count1;
+}
+
+document.getElementById("zero1").onclick = function(){
+    count1 = 0;
+    document.getElementById("mention-1").textContent = count1;
+}
+    </script>
+</body>
+</html>

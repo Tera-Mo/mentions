@@ -18,10 +18,13 @@
     }
     h2{
         font-size: 2em;
-        color: ;
     }
 body{
     background: #cccccccc;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
 }
 body {
     
@@ -64,6 +67,7 @@ button{
     background-color: rgb(0, 255, 0);
     border-radius:20px;
     transition: 0.7s;
+    cursor: pointer;
 }
 button:hover{
     background: green;
@@ -74,6 +78,40 @@ button:hover{
 .decrease:hover{
     background: rgb(146, 0, 0);
 }
+
+.zero{
+    background-color: grey;
+}
+.zero:hover{
+    background-color: rgb(90, 89, 89);
+}
+a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.7s;
+
+    display: block;
+    text-align: center;
+    font-size: 4em;
+    font-family: Tektur;
+    border-radius: 40px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid #0ff; /* Cyan border */
+    box-shadow: 0 0 10px #0ff; /* Initial glow */
+    background-color: black; /* Dark background for better effect */
+}
+
+a:hover{
+    background-color: rgb(90, 90, 90);
+}
+#muhamed-pray{
+    font-size: 6rem;
+}
+
+
 @media (max-width:641px){
     body{
         font-size: 12px;
