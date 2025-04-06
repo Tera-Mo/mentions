@@ -20,7 +20,7 @@
         font-size: 2em;
     }
 body{
-    background: #cccccccc;
+    background: #000000cc;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -44,7 +44,7 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
-    border: 3px solid #0ff; /* Cyan border */
+    border: 3px solid rgb(161, 179, 179); /* Cyan border */
     box-shadow: 0 0 10px #0ff; /* Initial glow */
     background-color: black; /* Dark background for better effect */
 }
@@ -57,9 +57,10 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
-    border: 3px solid #0ff; /* Cyan border */
-    box-shadow: 0 0 10px #0ff; /* Initial glow */
+    border: 3px solid rgb(255, 255, 255); /* Cyan border */
+    box-shadow: 0 0 10px rgb(255, 255, 255); /* Initial glow */
     background-color: black; /* Dark background for better effect */
+    font-family: Alkalami;
 }
 button{
     width: 100px;
@@ -99,9 +100,10 @@ a{
     color: white;
     text-align: center;
     padding: 20px;
-    border: 3px solid #0ff; /* Cyan border */
-    box-shadow: 0 0 10px #0ff; /* Initial glow */
+    border: 3px solid #c5b8b8; /* Cyan border */
+    box-shadow: 0 0 10px #7a6e6e; /* Initial glow */
     background-color: black; /* Dark background for better effect */
+    margin: 15px;
 }
 
 a:hover{
@@ -118,7 +120,7 @@ a:hover{
     }
 
     .main-content h2{
-        font-size: 0.8em;
+        font-size: 1.4em;
     }
 
     .main-content h3{

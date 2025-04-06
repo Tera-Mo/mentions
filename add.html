@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>اللهم صل و سلم على سيدنا محمد</title>
+</head>
+<body>
+    <a href="indexmain.html">عوده</a>
+    <div id="ment1" class="ment">
+        <h2 id="title"></h2>
+   
+        <button id="zero1" class="zero"></button>
+        <button id="btn11" class="decrease"></button>
+        <label id="mention-1" class="countlabel">0</label> <br>
+    </div>
+
+<script>
+  // طلب الذكر من المستخدم
+  let title = "";
+
+  while (!title) {
+    title = window.prompt("ادخل الذكر");
+  }
+
+  document.getElementById("title").textContent = title;
+
+  // العداد
+  let count1 = 0;
+
+  // الضغط على العداد لزيادته
+  document.getElementById("mention-1").onclick = function () {
+    count1++;
+    document.getElementById("mention-1").textContent = count1;
+  };
+
+  // زر الإنقاص
+  document.getElementById("btn11").onclick = function () {
+    count1--;
+    document.getElementById("mention-1").textContent = count1;
+  };
+
+  // زر التصفير
+  document.getElementById("zero1").onclick = function () {
+    count1 = 0;
+    document.getElementById("mention-1").textContent = count1;
+  };
+</script>
+ 
+</body>
+</html>

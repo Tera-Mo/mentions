@@ -7,7 +7,7 @@
     <title>اللهم صل و سلم على سيدنا محمد</title>
 </head>
 <body>
-    <a href="index.html">عوده</a>
+    <a href="indexmain.html">عوده</a>
     <div id="ment1" class="ment">
         <h2>اللهم صل على محمد</h2>
    
@@ -18,6 +18,17 @@
 
 
     <script>
+
+const const1 = "قيمة مهمة";
+
+// حفظها
+localStorage.setItem("const1", const1);
+
+// لاحقًا: قراءة القيمة
+const savedConst1 = localStorage.getItem("const1");
+console.log(savedConst1); // هتطبع: قيمة مهمة
+
+
 const btn1 = document.getElementById("btn1");
 const btn2 = document.getElementById("btn2");
 const btn3 = document.getElementById("btn3");
