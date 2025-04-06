@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>الذكر المضاف</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="index.html">رجوع</a>
+
+  <div id="ment-added" class="ment">
+    <h2 id="title"></h2>
+    <button id="zero" class="zero"></button>
+    <button id="decrease" class="decrease"></button>
+    <label id="count-label" class="countlabel">0</label>
+  </div>
+
+  <script>
+    // جلب الذكر من localStorage
+    const title = localStorage.getItem("addedZekr");
+    if (title) {
+      document.getElementById("title").textContent = title;
+    } else {
+      document.getElementById("title").textContent = "لا يوجد ذكر محفوظ";
+    }
+
+    // العداد
+    let count = 0;
+
+    document.getElementById("count-label").onclick = function () {
+      count++;
+      document.getElementById("count-label").textContent = count;
+    };
+
+    document.getElementById("decrease").onclick = function () {
+      count--;
+      document.getElementById("count-label").textContent = count;
+    };
+
+    document.getElementById("zero").onclick = function () {
+      count = 0;
+      document.getElementById("count-label").textContent = count;
+    };
+  </script>
+</body>
+</html>

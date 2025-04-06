@@ -1,52 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>اللهم صل و سلم على سيدنا محمد</title>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+
+  <title>إضافة ذكر</title>
 </head>
 <body>
-    <a href="indexmain.html">عوده</a>
-    <div id="ment1" class="ment">
-        <h2 id="title"></h2>
-   
-        <button id="zero1" class="zero"></button>
-        <button id="btn11" class="decrease"></button>
-        <label id="mention-1" class="countlabel">0</label> <br>
-    </div>
+  <h2>أدخل الذكر الجديد:</h2>
+  <input type="text" id="zekrInput" placeholder="اكتب الذكر هنا">
+  <button onclick="saveZekr()">حفظ</button><br>
+  <div id="confirmation"></div>
+  <a href="added.html">اذهب إلى الذكر المضاف</a>
 
-<script>
-  // طلب الذكر من المستخدم
-  let title = "";
+  <script>
+    function saveZekr() {
+      const zekr = document.getElementById("zekrInput").value.trim();
+      const confirmation = document.getElementById("confirmation");
+  
+      if (zekr) {
+        localStorage.setItem("addedZekr", zekr);
+        confirmation.textContent = "✔️ تم حفظ الذكر بنجاح!";
+        confirmation.style.display = "block";
+  
+        setTimeout(() => {
+          confirmation.style.display = "none";
+        }, 3000);
+      } else {
+        confirmation.textContent = "⚠️ من فضلك أدخل الذكر أولًا.";
+        confirmation.style.display = "block";
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+  background-color: #f7f7f7;
+  font-family: "Reem Kufi", sans-serif;
+  text-align: center;
+  padding: 50px 20px;
+  color: #333;
+}
 
-  while (!title) {
-    title = window.prompt("ادخل الذكر");
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 20px;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-family: "Reem Kufi", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* أنيميشن دخول سلس */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-  document.getElementById("title").textContent = title;
+body {
+  background-color: #f7f7f7;
+  font-family: "Reem Kufi", sans-serif;
+  text-align: center;
+  padding: 50px 20px;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
 
-  // العداد
-  let count1 = 0;
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
 
-  // الضغط على العداد لزيادته
-  document.getElementById("mention-1").onclick = function () {
-    count1++;
-    document.getElementById("mention-1").textContent = count1;
-  };
+input[type="text"] {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 20px;
+  font-family: "Reem Kufi", sans-serif;
+  transition: 0.3s;
+  animation: fadeIn 1.4s ease-in-out;
+}
 
-  // زر الإنقاص
-  document.getElementById("btn11").onclick = function () {
-    count1--;
-    document.getElementById("mention-1").textContent = count1;
-  };
+input[type="text"]:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px #28a74555;
+}
 
-  // زر التصفير
-  document.getElementById("zero1").onclick = function () {
-    count1 = 0;
-    document.getElementById("mention-1").textContent = count1;
-  };
-</script>
- 
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-family: "Reem Kufi", sans-serif;
+  transition: background-color 0.3s ease;
+  animation: fadeIn 1.6s ease-in-out;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+  animation: fadeIn 1.8s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* رسالة تأكيد مخصصة */
+#confirmation {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #28a745;
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+  </style>
 </body>
 </html>

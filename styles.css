@@ -1,4 +1,22 @@
-    h1{
+  *{
+
+    font-family: 'Reem Kufi';
+
+  }
+
+  .aref-ruqaa-ink-regular {
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .aref-ruqaa-ink-bold {
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  h1{
         margin: 0;
         text-align: center;
         border: dashed black 2px;
@@ -6,7 +24,7 @@
         color: yellow;
         font-size: 0.3em;
         transition: 0.7s;
-        font-family: Alkalami;
+        font-family: Aref Ruqaa Ink;
 
         font-size: 1rem;
         color: white;
@@ -55,6 +73,7 @@ body {
     font-family: Tektur;
     border-radius: 40px;
     color: white;
+    margin-top: 10px;
     text-align: center;
     padding: 20px;
     border: 3px solid rgb(255, 255, 255); /* Cyan border */
@@ -104,6 +123,16 @@ a{
     box-shadow: 0 0 10px #7a6e6e; /* Initial glow */
     background-color: black; /* Dark background for better effect */
     margin: 15px;
+
+    display: block;
+    margin: 10px;
+    padding: 10px;
+
+    text-align: center;
+    font-family: 'Reem Kufi', sans-serif;
+    text-decoration: none;
+    color: #f9f9f9;
+    border-radius: 10px;
 }
 
 a:hover{
