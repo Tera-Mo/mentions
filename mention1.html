@@ -29,32 +29,29 @@ const savedConst1 = localStorage.getItem("const1");
 console.log(savedConst1); // هتطبع: قيمة مهمة
 
 
-const btn1 = document.getElementById("btn1");
-const btn2 = document.getElementById("btn2");
-const btn3 = document.getElementById("btn3");
-const btn4 = document.getElementById("btn4");
-const btn5 = document.getElementById("btn5");
-let count1 = 0;
-let count2 = 0;
-let count3 = 0;
-let count4 = 0;
-let count5 = 0;
+let count1 = parseInt(localStorage.getItem("count1")) || 0;
 
+// عرض الرقم المحفوظ أول ما الصفحة تفتح
+document.getElementById("mention-1").textContent = count1;
 
-        document.getElementById("mention-1").onclick = function(){
-    count1++;
-    document.getElementById("mention-1").textContent = count1;
-}
+document.getElementById("mention-1").onclick = function () {
+  count1++;
+  document.getElementById("mention-1").textContent = count1;
+  localStorage.setItem("count1", count1);
+};
 
-document.getElementById("btn11").onclick = function(){
-    count1--;
-    document.getElementById("mention-1").textContent = count1;
-}
+document.getElementById("btn11").onclick = function () {
+  count1--;
+  document.getElementById("mention-1").textContent = count1;
+  localStorage.setItem("count1", count1);
+};
 
-document.getElementById("zero1").onclick = function(){
-    count1 = 0;
-    document.getElementById("mention-1").textContent = count1;
-}
+document.getElementById("zero1").onclick = function () {
+  count1 = 0;
+  document.getElementById("mention-1").textContent = count1;
+  localStorage.setItem("count1", count1);
+};
+
     </script>
 </body>
 </html>

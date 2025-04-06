@@ -19,22 +19,30 @@
 
 
 <script>
-let count2 = 0;
+let count2 = parseInt(localStorage.getItem("count2")) || 0;
+
+// عرض الرقم المحفوظ أول ما الصفحة تفتح
+document.getElementById("mention-2").textContent = count2;
 
 document.getElementById("mention-2").onclick = function () {
-    count2++;
-    document.getElementById("mention-2").textContent = count2;
-}
+  count2++;
+  document.getElementById("mention-2").textContent = count2;
+  localStorage.setItem("count2", count2);
+};
 
 document.getElementById("btn21").onclick = function () {
-    count2--;
-    document.getElementById("mention-2").textContent = count2;
-}
+  count2--;
+  document.getElementById("mention-2").textContent = count2;
+  localStorage.setItem("count2", count2);
+};
 
 document.getElementById("zero2").onclick = function () {
-    count2 = 0;
-    document.getElementById("mention-2").textContent = count2;
-}
+  count2 = 0;
+  document.getElementById("mention-2").textContent = count2;
+  localStorage.setItem("count2", count2);
+};
+
+
 </script>
 
 </body>

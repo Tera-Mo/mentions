@@ -18,31 +18,29 @@
     
 
     <script>
-const btn1 = document.getElementById("btn1");
-const btn2 = document.getElementById("btn2");
-const btn3 = document.getElementById("btn3");
-const btn4 = document.getElementById("btn4");
-const btn5 = document.getElementById("btn5");
-let count1 = 0;
-let count2 = 0;
-let count3 = 0;
-let count4 = 0;
-let count5 = 0;
+let count3 = parseInt(localStorage.getItem("count3")) || 0;
 
-        document.getElementById("mention-3").onclick = function(){
-    count3++;
-    document.getElementById("mention-3").textContent = count3;
-}
+// عرض الرقم المحفوظ أول ما الصفحة تفتح
+document.getElementById("mention-3").textContent = count3;
 
-document.getElementById("btn31").onclick = function(){
-    count3--;
-    document.getElementById("mention-3").textContent = count3;
-}
+document.getElementById("mention-3").onclick = function () {
+  count3++;
+  document.getElementById("mention-3").textContent = count3;
+  localStorage.setItem("count3", count3);
+};
 
-document.getElementById("zero3").onclick = function(){
-    count1 = 0;
-    document.getElementById("mention-3").textContent = count1;
-}
+document.getElementById("btn31").onclick = function () {
+  count3--;
+  document.getElementById("mention-3").textContent = count3;
+  localStorage.setItem("count3", count3);
+};
+
+document.getElementById("zero3").onclick = function () {
+  count3 = 0;
+  document.getElementById("mention-3").textContent = count3;
+  localStorage.setItem("count3", count3);
+};
+
     </script>
 </body>
 </html>
